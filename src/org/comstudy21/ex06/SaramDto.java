@@ -1,5 +1,7 @@
 package org.comstudy21.ex06;
 
+import java.util.Vector;
+
 public class SaramDto {
 	private int idx;
 	private String name;
@@ -75,6 +77,13 @@ public class SaramDto {
 			return false;
 		return true;
 	}
-	
-	
+
+	public Vector toVector() {
+		Vector vector = new Vector();
+		vector.add(idx);
+		vector.add(name);
+		vector.add(email);
+		vector.add(phone);
+		return vector;
+	}
 }
